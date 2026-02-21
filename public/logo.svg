@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 240" role="img" aria-label="Looking Forward Community Programs logo">
+  <rect width="780" height="240" fill="none"/>
+  <g transform="translate(30,20)">
+    <path d="M50 20 h40 v125 l70 -22 v40 l-110 38 z" fill="#3A3A3A"/>
+    <path d="M210 15 l140 -35 20 20 -105 28 v24 l72 -16 v28 l-72 16 v45 h-35 v-160 z" fill="#C56A2D" transform="translate(0,40)"/>
+    <text x="0" y="195" font-size="62" font-family="Libre Baskerville, serif" fill="#3A3A3A" font-style="italic">Landing</text>
+    <text x="210" y="195" font-size="62" font-family="Libre Baskerville, serif" fill="#C56A2D" font-style="italic">Forward</text>
+    <text x="55" y="225" font-size="30" letter-spacing="6" font-family="Montserrat, sans-serif" fill="#3A3A3A">COMMUNITY PROGRAMS</text>
+  </g>
+</svg>
