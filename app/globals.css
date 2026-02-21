@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-charcoal text-white antialiased;
+  background:
+    radial-gradient(circle at 10% 10%, rgba(197, 106, 45, 0.2) 0%, transparent 40%),
+    radial-gradient(circle at 90% 20%, rgba(255, 255, 255, 0.08) 0%, transparent 30%),
+    linear-gradient(160deg, #282828 0%, #3a3a3a 55%, #444 100%);
+  min-height: 100vh;
+}
+
+section {
+  scroll-margin-top: 96px;
+}
+
+.snap-container {
+  scroll-snap-type: y proximity;
+}
+
+.snap-section {
+  scroll-snap-align: start;
+}
+
+.glass {
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.08));
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.24), inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.copper-underline {
+  background: linear-gradient(90deg, #c56a2d, #ee9b64, #c56a2d);
+  background-size: 200% 100%;
+  animation: shimmer 4s linear infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.custom-cursor {
+  pointer-events: none;
+  position: fixed;
+  z-index: 60;
+  width: 18px;
+  height: 18px;
+  border-radius: 9999px;
+  border: 1px solid rgba(197, 106, 45, 0.8);
+  background-color: rgba(197, 106, 45, 0.2);
+  transform: translate(-50%, -50%);
+}
